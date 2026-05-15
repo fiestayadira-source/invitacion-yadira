@@ -44,37 +44,3 @@ envelopeBtn.addEventListener('click', async () => {
 
   envelopeBtn.disabled = false;
 });
-```
-
----
-
-# ARCHIVOS NECESARIOS
-
-Coloca estos archivos junto al proyecto:
-
-* sobre.png
-* sobre-abierto.png
-* musica.mp3
-* fondo-flores.jpg
-
-Opcional:
-
-* Puedes usar la imagen que subiste como fondo floral.
-
----
-
-# ESTRUCTURA
-
-```txt
-/proyecto
-  index.html
-  style.css
-  app.js
-  musica.mp3
-  sobre.png
-  sobre-abierto.png
-  fondo-flores.jpg
-```
-
----
-
