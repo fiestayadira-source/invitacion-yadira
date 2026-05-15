@@ -109,8 +109,10 @@ body{
   position:absolute;
   inset:0;
 
-  background:
-    url('fondo-flores.png') center/cover no-repeat;
+  background-image:url('./fondo-flores.png');
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
 }
 
 .inviteContainer{
