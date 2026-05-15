@@ -315,3 +315,44 @@ body{
     font-size:20px;
   }
 }
+
+/* =========================
+   FLOWER BURST
+========================= */
+
+#flowerBurst{
+  position:fixed;
+  inset:0;
+  pointer-events:none;
+  overflow:hidden;
+  z-index:9999;
+}
+
+.flowerParticle{
+  position:absolute;
+  top:-80px;
+
+  font-size:34px;
+
+  animation:fallFlower linear forwards;
+
+  opacity:.95;
+}
+
+@keyframes fallFlower{
+
+  0%{
+    transform:translateY(-10vh) rotate(0deg);
+    opacity:0;
+  }
+
+  10%{
+    opacity:1;
+  }
+
+  100%{
+    transform:translateY(120vh) rotate(360deg);
+    opacity:0;
+  }
+
+}
