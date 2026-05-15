@@ -110,8 +110,7 @@ body{
   inset:0;
 
   background:
-    linear-gradient(rgba(255,250,246,.94), rgba(255,250,246,.94)),
-    url('fondo-flores.png') center/cover no-repeat;
+    url('fondo-flores.jpg') center/cover no-repeat;
 }
 
 .inviteContainer{
@@ -128,7 +127,7 @@ body{
 .inviteCard{
   width:min(560px,95vw);
 
-  background:rgba(255,255,255,.55);
+  background:rgba(255,255,255,.35);
 
   border-radius:30px;
 
@@ -138,10 +137,10 @@ body{
 
   box-shadow:0 25px 45px rgba(0,0,0,.12);
 
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
 
-  border:1px solid rgba(255,255,255,.45);
+  border:1px solid rgba(255,255,255,.4);
 }
 
 .cardFlowers{
