@@ -1,6 +1,4 @@
-# app.js
 
-```javascript
 const intro = document.getElementById('intro');
 const invite = document.getElementById('invite');
 
