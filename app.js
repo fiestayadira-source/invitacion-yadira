@@ -32,6 +32,38 @@ function showInvite(){
   invite.classList.add('screen--active');
 }
 
+function createFlowerBurst(){
+
+  const container = document.getElementById('flowerBurst');
+
+  if(!container) return;
+
+  const flowers = ['🌸','🌼','🌺','🌷'];
+
+  for(let i=0;i<45;i++){
+
+    const flower = document.createElement('div');
+
+    flower.className = 'flowerParticle';
+
+    flower.textContent =
+      flowers[Math.floor(Math.random() * flowers.length)];
+
+    flower.style.left = Math.random() * 100 + 'vw';
+
+    flower.style.animationDuration =
+      (4 + Math.random() * 3) + 's';
+
+    flower.style.fontSize =
+      (22 + Math.random() * 26) + 'px';
+
+    container.appendChild(flower);
+
+    setTimeout(() => {
+      flower.remove();
+    },7000);
+  }
+}
 envelopeBtn.addEventListener('click', async () => {
 
   envelopeImg.src = './sobre-abierto.png';
@@ -39,6 +71,8 @@ envelopeBtn.addEventListener('click', async () => {
   envelopeBtn.disabled = true;
 
   await new Promise(resolve => setTimeout(resolve, 700));
+  
+  createFlowerBurst();
 
   showInvite();
 
