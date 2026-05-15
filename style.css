@@ -184,13 +184,13 @@ body{
 }
 
 .infoBox{
-  background:#fff9f4;
+  background:rgba(255, 228, 160, 0.45);
 
   border-radius:20px;
 
   padding:18px 12px;
 
-  box-shadow:0 10px 20px rgba(0,0,0,.06);
+  box-shadow:0 10px 20px rgba(0,0,0,.05);
 }
 
 .label{
