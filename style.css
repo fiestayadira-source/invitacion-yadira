@@ -129,7 +129,7 @@ body{
 .inviteCard{
   width:min(560px,95vw);
 
-  background:rgba(255,255,255,.35);
+  background:#ffffff;
 
   border-radius:30px;
 
@@ -138,11 +138,6 @@ body{
   text-align:center;
 
   box-shadow:0 25px 45px rgba(0,0,0,.12);
-
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-
-  border:1px solid rgba(255,255,255,.4);
 }
 
 .cardFlowers{
