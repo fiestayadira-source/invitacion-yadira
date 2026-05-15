@@ -1,0 +1,415 @@
+# style.css
+
+```css
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:'Montserrat', sans-serif;
+  overflow-x:hidden;
+  background:#fdf8f4;
+}
+
+.screen{
+  min-height:100vh;
+  display:none;
+  position:relative;
+}
+
+.screen--active{
+  display:block;
+}
+
+/* =========================
+   INTRO
+========================= */
+
+.introBg{
+  position:absolute;
+  inset:0;
+
+  background:
+    linear-gradient(rgba(255,255,255,.75), rgba(255,255,255,.75)),
+    url('fondo-flores.jpg') center/cover no-repeat;
+
+  filter:saturate(1.05);
+}
+
+.overlay{
+  position:relative;
+  min-height:100vh;
+
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+
+  gap:26px;
+
+  padding:30px;
+  text-align:center;
+}
+
+.introText{
+  font-family:'Playfair Display', serif;
+  font-size:36px;
+  color:#8c6b3f;
+
+  max-width:500px;
+  line-height:1.2;
+
+  text-shadow:0 2px 10px rgba(0,0,0,.08);
+}
+
+.flowers{
+  font-size:42px;
+  letter-spacing:10px;
+  opacity:.9;
+}
+
+.envelope{
+  border:0;
+  background:transparent;
+  cursor:pointer;
+
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+
+  gap:12px;
+
+  transition:transform .2s ease;
+}
+
+.envelope:hover{
+  transform:translateY(-3px);
+}
+
+.envelope:active{
+  transform:scale(.97);
+}
+
+.envelope img{
+  width:min(340px,80vw);
+  filter:drop-shadow(0 18px 25px rgba(0,0,0,.18));
+}
+
+.tap{
+  color:#8b6a3c;
+  font-weight:600;
+  font-size:15px;
+}
+
+/* =========================
+   INVITACIÓN
+========================= */
+
+.inviteBg{
+  position:absolute;
+  inset:0;
+
+  background:
+    linear-gradient(rgba(255,250,246,.94), rgba(255,250,246,.94)),
+    url('fondo-flores.jpg') center/cover no-repeat;
+}
+
+.inviteContainer{
+  position:relative;
+  min-height:100vh;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  padding:30px 18px;
+}
+
+.inviteCard{
+  width:min(560px,95vw);
+
+  background:rgba(255,255,255,.92);
+
+  border-radius:30px;
+
+  padding:42px 30px;
+
+  text-align:center;
+
+  box-shadow:0 25px 45px rgba(0,0,0,.12);
+
+  backdrop-filter:blur(8px);
+}
+
+.cardFlowers{
+  font-size:34px;
+  margin-bottom:18px;
+}
+
+.smallText{
+  color:#5f6a35;
+  font-size:22px;
+  margin-bottom:12px;
+
+  font-family:'Playfair Display', serif;
+}
+
+.name{
+  font-family:'Playfair Display', serif;
+
+  font-size:64px;
+  line-height:.95;
+
+  color:#b8871b;
+
+  margin-bottom:20px;
+}
+
+.cumple{
+  font-family:'Great Vibes', cursive;
+
+  font-size:74px;
+  font-weight:400;
+
+  color:#c79a35;
+
+  margin-bottom:34px;
+}
+
+.infoGrid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:14px;
+
+  margin-bottom:28px;
+}
+
+.infoBox{
+  background:#fff9f4;
+
+  border-radius:20px;
+
+  padding:18px 12px;
+
+  box-shadow:0 10px 20px rgba(0,0,0,.06);
+}
+
+.label{
+  display:block;
+
+  font-size:14px;
+  font-weight:700;
+  text-transform:uppercase;
+
+  color:#9a7b48;
+
+  margin-bottom:10px;
+}
+
+.value{
+  font-size:24px;
+  font-weight:700;
+  line-height:1.15;
+
+  color:#49502d;
+}
+
+.address{
+  font-size:24px;
+  font-weight:700;
+
+  line-height:1.4;
+
+  color:#49502d;
+
+  margin-bottom:34px;
+}
+
+.message{
+  font-family:'Great Vibes', cursive;
+
+  font-size:58px;
+  line-height:1.05;
+
+  color:#55602f;
+
+  margin-bottom:36px;
+}
+
+.actions{
+  display:grid;
+  gap:14px;
+}
+
+.btn{
+  text-decoration:none;
+
+  padding:16px 18px;
+
+  border-radius:18px;
+
+  background:linear-gradient(to bottom,#f8e6be,#eacb86);
+
+  color:#5d4724;
+
+  font-weight:700;
+  font-size:17px;
+
+  box-shadow:0 12px 24px rgba(0,0,0,.10);
+
+  transition:all .2s ease;
+}
+
+.btn:hover{
+  transform:translateY(-2px);
+}
+
+.btn:active{
+  transform:scale(.98);
+}
+
+.btn--secondary{
+  background:linear-gradient(to bottom,#f7f1e6,#ebdfcb);
+}
+
+.bottomFlowers{
+  margin-top:28px;
+  margin-bottom:0;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width:700px){
+
+  .introText{
+    font-size:28px;
+  }
+
+  .flowers{
+    font-size:30px;
+    letter-spacing:4px;
+  }
+
+  .inviteCard{
+    padding:34px 22px;
+  }
+
+  .name{
+    font-size:52px;
+  }
+
+  .cumple{
+    font-size:58px;
+  }
+
+  .infoGrid{
+    grid-template-columns:1fr;
+  }
+
+  .message{
+    font-size:46px;
+  }
+
+  .address{
+    font-size:20px;
+  }
+}
+```
+
+---
+
+# app.js
+
+```javascript
+const intro = document.getElementById('intro');
+const invite = document.getElementById('invite');
+
+const envelopeBtn = document.getElementById('envelopeBtn');
+const envelopeImg = document.getElementById('envelopeImg');
+
+const bgm = document.getElementById('bgm');
+
+// =========================
+// MÚSICA
+// =========================
+
+function startMusic(){
+  if(!bgm) return;
+
+  bgm.volume = 0.5;
+
+  bgm.play().catch(() => {});
+}
+
+window.addEventListener('pointerdown', startMusic, { once:true });
+window.addEventListener('touchstart', startMusic, { once:true });
+window.addEventListener('click', startMusic, { once:true });
+
+// =========================
+// ABRIR INVITACIÓN
+// =========================
+
+function showInvite(){
+  intro.classList.remove('screen--active');
+  invite.classList.add('screen--active');
+}
+
+envelopeBtn.addEventListener('click', async () => {
+
+  envelopeImg.src = './sobre-abierto.png';
+
+  envelopeBtn.disabled = true;
+
+  await new Promise(resolve => setTimeout(resolve, 700));
+
+  showInvite();
+
+  envelopeBtn.disabled = false;
+});
+```
+
+---
+
+# ARCHIVOS NECESARIOS
+
+Coloca estos archivos junto al proyecto:
+
+* sobre.png
+* sobre-abierto.png
+* musica.mp3
+* fondo-flores.jpg
+
+Opcional:
+
+* Puedes usar la imagen que subiste como fondo floral.
+
+---
+
+# ESTRUCTURA
+
+```txt
+/proyecto
+  index.html
+  style.css
+  app.js
+  musica.mp3
+  sobre.png
+  sobre-abierto.png
+  fondo-flores.jpg
+```
+
+---
+
+# LINK PERSONALIZADO
+
+WhatsApp:
+
++52 961 179 2003
+
+Ubicación:
+
+[https://maps.app.goo.gl/JSDaaugb3v3bVcnN8](https://maps.app.goo.gl/JSDaaugb3v3bVcnN8)

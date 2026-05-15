@@ -1,0 +1,133 @@
+# index.html
+
+```html
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Invitación - Yadira Laguna Valdez</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Great+Vibes&family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- =========================
+     INTRO
+========================= -->
+<main id="intro" class="screen screen--active">
+  <div class="introBg"></div>
+
+  <div class="overlay">
+
+    <div class="flowers flowers--top">
+      🌸 🌼 🌺 🌷 🌼 🌸
+    </div>
+
+    <h2 class="introText">Tienes una invitación especial</h2>
+
+    <button id="envelopeBtn" class="envelope" type="button">
+      <img id="envelopeImg" src="./sobre.png" alt="Sobre invitación" />
+      <span class="tap">Toca el sobre</span>
+    </button>
+
+    <div class="flowers flowers--bottom">
+      🌸 🌼 🌺 🌷 🌼 🌸
+    </div>
+
+  </div>
+</main>
+
+<!-- =========================
+     INVITACIÓN
+========================= -->
+<section id="invite" class="screen">
+
+  <div class="inviteBg"></div>
+
+  <div class="inviteContainer">
+
+    <div class="inviteCard">
+
+      <div class="cardFlowers topFlowers">
+        🌸 🌼 🌺 🌷 🌼 🌸
+      </div>
+
+      <p class="smallText">Te invito a celebrar</p>
+
+      <h1 class="name">
+        Yadira<br>
+        Laguna Valdez
+      </h1>
+
+      <h2 class="cumple">Mi cumpleaños</h2>
+
+      <div class="infoGrid">
+
+        <div class="infoBox">
+          <span class="label">Fecha</span>
+          <span class="value">Jueves<br>21 Mayo</span>
+        </div>
+
+        <div class="infoBox">
+          <span class="label">Hora</span>
+          <span class="value">2:00 PM</span>
+        </div>
+
+        <div class="infoBox">
+          <span class="label">Lugar</span>
+          <span class="value">Salón Roma</span>
+        </div>
+
+      </div>
+
+      <div class="address">
+        Acala 5, Los Manguitos<br>
+        Tuxtla Gutiérrez, Chiapas
+      </div>
+
+      <div class="message">
+        Me encantaría que me acompañes
+      </div>
+
+      <div class="actions">
+
+        <a
+          class="btn"
+          href="https://wa.me/529611792003?text=Hola%20Yadira,%20confirmo%20mi%20asistencia%20a%20tu%20cumpleaños"
+          target="_blank"
+          rel="noopener"
+        >
+          Confirmar asistencia
+        </a>
+
+        <a
+          class="btn btn--secondary"
+          href="https://maps.app.goo.gl/JSDaaugb3v3bVcnN8"
+          target="_blank"
+          rel="noopener"
+        >
+          Ver ubicación
+        </a>
+
+      </div>
+
+      <div class="cardFlowers bottomFlowers">
+        🌸 🌼 🌺 🌷 🌼 🌸
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<audio id="bgm" src="./musica.mp3" preload="auto" loop></audio>
+
+<script src="app.js"></script>
+</body>
+</html>
